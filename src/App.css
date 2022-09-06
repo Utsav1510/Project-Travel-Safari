@@ -1,0 +1,22 @@
+body{
+  background-color:#212529;
+}
+.navbar-nav>li>a {
+    color: rgb(242, 203, 8);
+    font-size: larger;
+    font-family: fantasy;
+    padding-right: 100px;
+  }
+  
+  nav a.nav-list {
+    letter-spacing: 0.5rem;
+  
+  }
+  
+  navbar-brand img alt {
+    font-size: medium;
+    color: rgb(242, 203, 8);
+    max-width: 17.4rem;
+    padding: 0 !important;
+    height: 0rem;
+  }
