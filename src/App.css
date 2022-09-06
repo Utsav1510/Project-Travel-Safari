@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +15,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+nav-link a {
+  color: white;
 }
 
 .App-header {
@@ -32,7 +40,31 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-nav>li>a {
+  color: rgb(242, 203, 8);
+  font-size: larger;
+  font-family: fantasy;
+  padding-right: 100px;
+}
+
+nav a.nav-list {
+  letter-spacing: 0.5rem;
+
+}
+
+navbar-brand img alt {
+  font-size: medium;
+  color: rgb(242, 203, 8);
+  max-width: 17.4rem;
+  padding: 0 !important;
+  height: 0rem;
+}
+.middle{
+  display: flex;
 }
