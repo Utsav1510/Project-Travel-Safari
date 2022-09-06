@@ -13,7 +13,7 @@ function App() {
       <div className='middle'>
       <Header />
       <Reviews/>
-      [[</div>
+      </div>
       <Footer />
     </>
   )
