@@ -66,8 +66,18 @@ navbar-brand img alt {
   height: 0rem;
 }
 .middle{
-  display: flex;
+  /* display: flex; */
+  background-color: rgb(6, 138, 226);
+  height: 100%;
+  width: 100%;
 }
 /* .row{
   margin-left: auto;
 } */
+/* .carousel slide{
+  margin-top:20vh;
+} */
+#carouselExampleIndicators{
+  margin-top: 20vh;
+  height:20%
+}
