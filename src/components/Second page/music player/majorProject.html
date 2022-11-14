@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/968c9d14a4.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="favicon.svg">
+	<link rel="stylesheet" type="text/css" href="majorProject.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/r eleases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- Script for Parent Selector -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	<script>
+		$(document).ready(function(){
+		  $(".serial-no-9").parent().css({"background-color":"rgba(251,251,251,0.3)"});
+		});
+	</script>
+
+</head>
+	<body>
+		<!--################ HEADER ########################  -->
+		<div class="header-container display-flex">
+			<div class="header-logo-container display-flex">
+				<span class="logo-conatiner"><i class="fas fa-compact-disc"></i></span>
+
+				<div class="header-music-player">
+				&nbsp;Music<br>
+				<span><b>&nbsp;Player</b></span><br>
+				
+				</div>
+			</div>
+			
+			<span id="favourites"><a href="#Favourites">Favourites</a></span>
+
+
+			<!-- ######################## LINKS ##################### -->
+			<div id="links" class="links display-flex" style="">
+				<marquee scrollamount="10">
+					<ul class="ul-header-links">
+						<li>
+							<a href="#music-genres">Music Genres</a>
+						</li>
+						<li>
+							<a href="#popular-releases-container">Popular Releases</a>
+						</li>
+						<li>
+							<a href="#stations">Stations</a>
+						</li>
+						<li>
+							<a href="#music-types">Music Type</a>
+						</li>
+						<li>
+							<a href="#latest-releases-container">Latest Releases</a>
+						</li>
+					</ul>
+
+				</marquee>
+
+			</div>
+
+
+			<!-- ######################### Header-right ########################## -->
+
+			<div class="header-right display-flex">
+				<div class="search-bar display-inline-block">
+					<form class="display-flex">
+						<div>
+							<a href="#toBeDone"><i class="fas fa-search"></i></i></a>
+						</div>
+						
+						<div><input type="search" placeholder="Search"></div>
+						<div class="microphone"><a href="#toBeDone"><i class="fas fa-microphone"></i></a></div>	
+					</form>
+
+				</div>
+				<div class="notification-bell display-inline-block">
+				<a href="#toBeDone">	<i class="fas fa-bell"></i></a>
+				</div>
+				<div class="login-image border-radius-50">
+				<a href="#toBeDone">
+					<img src="https://i.pinimg.com/736x/09/11/1c/09111cf6a51270513234dca08a30a6b9.jpg">
+				</a>
+			</div>
+
+			</div>
+
+		</div>
+		<div class="mainBody-and-Aside display-flex">
+
+
+			<!-- ################ Main-Body ################  -->
+			<div class="main-body">
+				<!--########## Different music genres########### -->
+				<div id="music-genres" class="display-flex" >
+					<div class="title">
+						<h2>
+							<i class="fas fa-music"></i>&ensp;
+							Music Genres 
+							
+						</h2>
+					</div>
+
+					<div class="genre-image">
+						<a href="#toBeDone" class="image-container"><img class="image-hover" id="genre-img-1" src="https://i.pinimg.com/564x/7f/0d/6d/7f0d6d07c9a95d4839310d690af37e2a.jpg"><div id="play-hover">
+						<i class="fas fa-play"></i>
+						</div></a>
+						
+					</div>
+					<div class="genre-image ">
+						<a href="#toBeDone" class="image-container"><img class="image-hover" id="genre-img-2" src="https://i.pinimg.com/originals/1f/9c/b7/1f9cb7cf2ebcbd8d9f0d546d4bf389bb.jpg"><div id="play-hover">
+						<i class="fas fa-play"></i>
+						</div></a>
+						
+					</div>
+					<div class="genre-image">
+						<a href="#toBeDone" class="image-container"><img class="image-hover" id="genre-img-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT86S3ZvqyEYQ3XcDL8Hag8YnrWKvsVTp-7Qg&usqp=CAU"><div id="play-hover">
+						<i class="fas fa-play"></i>
+						</div></a>
+						
+					</div>
+					<div class="genre-image">
+						<a href="#toBeDone" class="image-container"><img class="image-hover" id="genre-img-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQezY-KRQfOnGH9bMQZg81l9lZsCbLZOBsdEg&usqp=CAU"><div id="play-hover">
+						<i class="fas fa-play"></i>
+						</div></a>
+						
+					</div>
+					<div class="genre-image">
+						<a href="#toBeDone" class="image-container"><img class="image-hover" id="genre-img-5" src="https://i.pinimg.com/474x/8b/92/f2/8b92f2d01539b34bb2ffde603ddb4b80.jpg"><div id="play-hover">
+						<i class="fas fa-play"></i>
+						</div></a>
+						
+					</div>
+
+				</div>
+
+
+
+
+				<!--############# POPULAR RELEASES ################## -->
+				<div id="popular-releases-container" class="display-flex">
+					<div class="title">
+						<h2><i class="fas fa-music"></i>&ensp;Popular Releases</h2>
+
+					</div>
+					<div class="popular-releases-sub-container display-flex">
+						<div class="popular-releases">
+							<a href="#toBeDone" class="image-container"><img id="popular-img-release-1"class="image-hover" src="https://i.pinimg.com/originals/5d/a3/c1/5da3c18a6a710237be5ee94288809a25.jpg">
+								<div id="play-hover">
+								<i class="fas fa-play"></i>
+								</div>
+							</a>
+							
+
+						</div>
+						<div class="release-details">
+							What Makes You Beautiful
+							<br>
+							<br>
+							One Direction
+							<br>
+							<br>
+							<br>
+						</div>	
+						<div class="duration">
+							<div class="menu-popular-releases">
+								<a href="#toBeDone"><i class="fas fa-ellipsis-h"></i>
+								</a>
+								<br>
+								<br>
+								<div class="menu-popular-releases-content">
+									<ul class="ul-menu-popular-releases">
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-play"></i>
+												</span>
+												Play Now 
+											</li>
+									
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-plus"></i>
+												</span>
+												Add To Queue
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container heart">
+													<i class="fas fa-heart"></i>
+												</span>
+												Add To Favourites
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container ">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												Get Info
+											</li>
+										</a>
+										
+									</ul>
+								</div>
+							</div>
+							4:00
+							<br>	
+							<br>
+							<br>
+							<br>
+						</div>
+
+					</div>
+					<div class="popular-releases-sub-container display-flex">
+						<div class="popular-releases">
+							<a href="#toBeDone" class="image-container"><img id="popular-img-release-1"class="image-hover" src="https://i.pinimg.com/564x/e7/5e/d3/e75ed3db0db7f67b40108f3d823f6988.jpg">
+								<div id="play-hover">
+								<i class="fas fa-play"></i>
+								</div>
+							</a>
+							
+
+						</div>
+						<div class="release-details">
+							Wham!
+							<br>
+							<br>
+							George Michael
+							<br>
+							<br>
+							<br>
+						</div>	
+						<div class="duration">
+							<div class="menu-popular-releases">
+								<a href="#toBeDone"><i class="fas fa-ellipsis-h"></i>
+								</a>
+								<br>
+								<br>
+								<div class="menu-popular-releases-content">
+									<ul class="ul-menu-popular-releases">
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-play"></i>
+												</span>
+												Play Now 
+											</li>
+									
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-plus"></i>
+												</span>
+												Add To Queue
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container heart">
+													<i class="fas fa-heart"></i>
+												</span>
+												Add To Favourites
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container ">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												Get Info
+											</li>
+										</a>
+										
+									</ul>
+								</div>
+							</div>
+							4:00
+							<br>	
+							<br>
+							<br>
+							<br>
+						</div>
+
+					</div>
+					<div class="popular-releases-sub-container display-flex">
+						<div class="popular-releases">
+							<a href="#toBeDone" class="image-container"><img id="popular-img-release-1"class="image-hover" src="https://headlineplanet.com/home/wp-content/uploads/2020/08/BTS-Dynamite-Group-1-scaled-e1597245051898-758x983.jpg">
+								<div id="play-hover">
+								<i class="fas fa-play"></i>
+								</div>
+							</a>
+							
+
+						</div>
+						<div class="release-details">
+							Dynamite
+							<br>
+							<br>
+							BTS
+							<br>
+							<br>
+							<br>
+						</div>	
+						<div class="duration">
+							<div class="menu-popular-releases">
+								<a href="#toBeDone"><i class="fas fa-ellipsis-h"></i>
+								</a>
+								<br>
+								<br>
+								<div class="menu-popular-releases-content">
+									<ul class="ul-menu-popular-releases">
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-play"></i>
+												</span>
+												Play Now 
+											</li>
+									
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-plus"></i>
+												</span>
+												Add To Queue
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container heart">
+													<i class="fas fa-heart"></i>
+												</span>
+												Add To Favourites
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container ">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												Get Info
+											</li>
+										</a>
+										
+									</ul>
+								</div>
+							</div>
+							4:00
+							<br>	
+							<br>
+							<br>
+							<br>
+						</div>
+
+					</div>
+					<div class="popular-releases-sub-container display-flex">
+						<div class="popular-releases">
+							<a href="#toBeDone" class="image-container"><img id="popular-img-release-1"class="image-hover" src="Images\\blackpink___how_you_like_that.jpg">
+								<div id="play-hover">
+								<i class="fas fa-play"></i>
+								</div>
+							</a>
+							
+
+						</div>
+						<div class="release-details">
+							How You Like That
+							<br>
+							<br>
+							Blackpink
+							<br>
+							<br>
+							<br>
+						</div>	
+						<div class="duration">
+							<div class="menu-popular-releases">
+								<a href="#toBeDone"><i class="fas fa-ellipsis-h"></i>
+								</a>
+								<br>
+								<br>
+								<div class="menu-popular-releases-content">
+									<ul class="ul-menu-popular-releases">
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-play"></i>
+												</span>
+												Play Now 
+											</li>
+									
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-plus"></i>
+												</span>
+												Add To Queue
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container heart">
+													<i class="fas fa-heart"></i>
+												</span>
+												Add To Favourites
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container ">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												Get Info
+											</li>
+										</a>
+										
+									</ul>
+								</div>
+							</div>
+							4:00
+							<br>	
+							<br>
+							<br>
+							<br>
+						</div>
+
+					</div>
+					<div class="popular-releases-sub-container display-flex">
+						<div class="popular-releases">
+							<a href="#toBeDone" class="image-container"><img id="popular-img-release-1"class="image-hover" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/24kGoldn_-_Mood_Remix.png/220px-24kGoldn_-_Mood_Remix.png">
+								<div id="play-hover">
+								<i class="fas fa-play"></i>
+								</div>
+							</a>
+							
+
+						</div>
+						<div class="release-details">
+							Mood
+							<br>
+							<br>
+							24kGoldn
+							<br>
+							<br>
+							<br>
+						</div>	
+						<div class="duration">
+							<div class="menu-popular-releases">
+								<a href="#toBeDone"><i class="fas fa-ellipsis-h"></i>
+								</a>
+								<br>
+								<br>
+								<div class="menu-popular-releases-content">
+									<ul class="ul-menu-popular-releases">
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-play"></i>
+												</span>
+												Play Now 
+											</li>
+									
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container">
+													<i class="fas fa-plus"></i>
+												</span>
+												Add To Queue
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container heart">
+													<i class="fas fa-heart"></i>
+												</span>
+												Add To Favourites
+											</li>
+										</a>
+										<a href="#toBeDone">
+											<li>
+												<span class="ul-logo-container ">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												Get Info
+											</li>
+										</a>
+										
+									</ul>
+								</div>
+							</div>
+							4:00
+							<br>	
+							<br>
+							<br>
+							<br>
+						</div>
+
+					</div>
+
+
+
+
+
+
+
+
+				<!-- ################ ARTISTS #######################3 -->
+				<div id="artists" class="display-flex">
+					<div class="title">
+						<h2><i class="fas fa-music"></i>&ensp;Popular Artists</h2>
+
+					</div>
+					<div class="artist-image image-container ">
+						<figure>
+							<a target="_blank" href="SINGLE PLAYLIST SCREENS-popular artist onclick htmls/popular-artist-onlick-justin-bieber.html" class="image-container"><img class="image-hover" id="artist-img-1" src="Images\\justin bieber.png">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>	
+							</a>
+							
+							<figcaption>Jusitn Bieber</figcaption>
+						</figure>
+
+						
+					</div>
+					<div class="artist-image image-container ">
+						<figure>
+							<a target="_blank" href="SINGLE PLAYLIST SCREENS-popular artist onclick htmls/popular-artist-onlick-ed-sheeran.html" src="Images\\ed sheeran.jpg">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>	
+							</a>
+							
+							<figcaption>Ed Sheeran</figcaption>
+						</figure>
+
+						
+					</div>
+					
+					<div class="artist-image image-container ">
+						<figure>
+							<a target="_blank" href="SINGLE PLAYLIST SCREENS-popular artist onclick htmls/popular-artist-onlick-shawn-mendes.html" class="image-container"><img class="image-hover" id="artist-img-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0K1gYWZ6sn5CeBj6XjI3AWGra327CiCzAwA&usqp=CAU">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>	
+							</a>
+
+							
+							<figcaption>Shawn Mendes</figcaption>
+						</figure>
+
+						
+					</div>
+					<div class="artist-image image-container ">
+						<figure>
+							<a target="_blank" href="SINGLE PLAYLIST SCREENS-popular artist onclick htmls/popular-artist-onlick-bruno-mars.html" class="image-container"><img class="image-hover" id="artist-img-4" src="Images\\brunoMars.jpg">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>	
+							</a>
+							
+							<figcaption>Bruno Mars</figcaption>
+						</figure>
+
+						
+					</div>
+					<div class="artist-image image-container ">
+						<figure>
+							<a target="_blank" href="SINGLE PLAYLIST SCREENS-popular artist onclick htmls/popular-artist-onlick-selena-gomez.html" class="image-container"><img class="image-hover" id="artist-img-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjaa4LKxAQMwhJPU_M5VDmOJiqvLd2XAiAg&usqp=CAU">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>	
+							</a>
+
+							
+							<figcaption align="right">Selena Gomez</figcaption>
+						</figure>
+
+						
+					</div>
+
+				</div>
+
+
+
+
+				<!-- ############## STATIONS ############## -->
+				<div id="stations" class="display-flex">
+					<div class="title">
+						<h2><i class="fas fa-music"></i>&ensp;Stations</h2>
+
+					</div>
+					
+					<div >
+						<a href="#toBeDone" class="image-container">
+							<img src="Images\\red-butterfly.png" class="border-radius -50 image-hover">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+						
+					</div>
+					<div >
+						<a href="#toBeDone" class="image-container">
+							<img src="Images\\retro.png" class="border-radius -50 image-hover">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+						
+					</div>
+					<div >
+						<a href="#toBeDone" class="image-container">
+							<img src="Images\\chill.png" class="border-radius -50 image-hover">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+						
+					</div>
+					<div >
+						<a href="#toBeDone" class="image-container">
+							<img src="Images\\Rock.png" class="border-radius -50 image-hover">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+						
+					</div>
+					<div >
+						<a href="#toBeDone" class="image-container">
+							<img src="Images\\selena Gomez.png" class="border-radius -50 image-hover">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+						
+					</div>
+
+				</div>
+
+
+				<!-- ###################### music-types ####################### -->
+				<div id="music-types" class="display-flex">
+					<div class="title">
+						<h2><i class="fas fa-music"></i>&ensp;Music Type</h2>
+
+					</div>
+					<div class="music-type-image-container">
+						<a href="#toBeDone" class="image-container">
+							<img class=" image-hover music-type-image" src="Images\\PARTY.png">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+					</div>
+					<div class="music-type-image-container">
+						<a href="#toBeDone" class="image-container">
+							<img class="image-hover music-type-image" src="Images\\electronic-music.png">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+					</div>
+					<div class="music-type-image-container">
+						<a href="#toBeDone" class="image-container">
+							<img class="image-hover music-type-image" src="Images\\road-trip.png">
+							<div id="play-hover">
+								<i class="fas fa-play"></i>
+							</div>
+
+						</a>
+
+					</div>
+				</div>
+
+
+				<!-- ################  Latest Releases################### -->
+				
+				<div id="latest-releases-container" class="display-flex">
+					<div class="title">
+						<h2><i class="fas fa-music"></i>&ensp;Latest Releases</h2>
+					
+					</div>
+					
+					
+					<div class="latest-releases">
+						<figure>
+							<a href="#toBeDone" class="image-container"><img class="image-hover" src="https://direct.rhapsody.com/imageserver/images/alb.463170373/500x500.jpg">
+								<div id="play-hover">
+									<i class="fas fa-play"></i>
+								</div>
+							</a>
+							<figcaption>
+								Headlocc<br>
+								20 Aug,2020
+							</figcaption>
+						</figure>				</div>
+					<div class="latest-releases">
+						<figure>
+							<a href="#toBeDone" class="image-container"><img class="image-hover" src="https://pbs.twimg.com/media/EicBdpBU4AIB0Qv?format=jpg&name=900x900">
+								<div id="play-hover">
+									<i class="fas fa-play"></i>
+								</div>
+							</a>
+							<figcaption>
+								Holy<br>
+								20 Aug,2020
+							</figcaption>
+						</figure>				</div>
+
+					<div class="latest-releases">
+						<figure>
+							<a href="#toBeDone" class="image-container">
+								<img class="image-hover" src="https://i.pinimg.com/736x/75/d6/e5/75d6e50718ff034f8c6457d078cb1f61.jpg">
+								<div id="play-hover">
+									<i class="fas fa-play"></i>
+								</div>
+							</a>
+							<figcaption>
+								Wonder<br>
+								20 oct,2020
+							</figcaption>
+						</figure>
+
+						
+					</div>
+					<div class="latest-releases">
+						<figure>
+							<a href="#toBeDone" class="image-container">
+								<img class="image-hover" src="Images\\becky-hill.jpg">
+								<div id="play-hover">
+									<i class="fas fa-play"></i>
+								</div>
+							</a >
+							<figcaption>
+								Space<br>
+								2 Apr,2020
+							</figcaption>
+						</figure>
+
+						
+					</div>
+					<div class="latest-releases">
+						<figure>
+							<a href="#toBeDone" class="image-container">
+								<img class="image-hover" src="Images\\i am on top.jpg">
+								<div id="play-hover">
+									<i class="fas fa-play"></i>
+								</div>
+							</a>
+							<figcaption>
+								I Am on Top<br>
+								7 July,2020
+							</figcaption>
+						</figure>
+
+						
+					
+				</div>
+
+				</div>
+				<div class="music-player-space">
+				</div>
+				
+
+			</div>
+			<!-- #################### ASIDE SECTION ############################## -->
+			<!-- #####################  ASIDE SECTION BUTTON ####################### -->
+				<div id="aside-section-button-container">
+				<button type="button" onclick="show()" id="aside-section-button">Queue&nbsp;<i class="fas fa-chevron-down">
+								</i></button>
+				</div>
+
+
+			<div id="aside-section">
+
+
+				<!-- #################### ASIDE HEADER ############################# -->
+				<div class="aside-header border-bottom">
+					<h1 class="Queue-header"> 
+						<span>
+							Queue 
+						
+							
+								<i class="fas fa-chevron-down">
+								</i>
+							<div class="queue-Drop-Down-content">
+								<ul class="queue-ul">
+									<li>
+											<span class="ul-logo-container ">
+													<i class="fas fa-bars"></i>
+											</span>
+											Playlists
+										
+									</li>
+									<li>
+											<span class="ul-logo-container heart">
+													<i class="fas fa-heart"></i>
+											</span>
+											Favoutrite Songs
+										
+									</li>
+								</ul>
+
+							</div>	
+						</span>
+					</h1>
+				</div>
+				<!-- ####################### ASIDE-MAIN-BODY ############################ -->
+				<div class="aside-main-body">
+					<div class="queue-song-container">
+						<div class="serial-no-1">
+							01
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\sunflower.jpg">
+						</div>
+						<div class="queue-song-name">
+							Sunflower<br>
+							<span class="queue-singer-name">
+							Post Malone</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-2">
+							02
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\purpose.jpg">
+						</div>
+						<div class="queue-song-name">
+							What Do You Mean ?<br>
+							<span class="queue-singer-name">
+							Justin Bieber</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-3">
+							03
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\voicenotes.jpg">
+						</div>
+						<div class="queue-song-name">
+							Boy<br>
+							<span class="queue-singer-name">
+							Charlie Puth</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-4">
+							04
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\illuminate.jpg">
+						</div>
+						<div class="queue-song-name">
+							Treat You Better<br>
+							<span class="queue-singer-name">
+							Shawn Mendes</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-5">
+							05
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\maroon5.jpg">
+						</div>
+						<div class="queue-song-name">
+							Sugar<br>
+							<span class="queue-singer-name">
+							Maroon 5</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-6">
+							06
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\alan-walker.jpg">
+						</div>
+						<div class="queue-song-name">
+							Alone<br>
+							<span class="queue-singer-name">
+							Alan Walker</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-7">
+							07
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\Alan-walker-SingMeToSleep.jpg">
+						</div>
+						<div class="queue-song-name">
+							Sing Me To Sleep<br>
+							<span class="queue-singer-name">
+							Alan Walker</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-8">
+							08
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\selena-feel-me.jpg">
+						</div>
+						<div class="queue-song-name">
+							Feel Me<br>
+							<span class="queue-singer-name">
+							Selena Gomez </span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-9">
+							09
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\taylor-swift-me.jpg">
+						</div>
+						<div class="queue-song-name">
+							Me<br>
+							<span class="queue-singer-name">
+							Taylor Swift</span>	
+						</div>
+						
+
+						<!-- <div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div> -->
+
+						<div class="pause-Btn-in-queue">
+							<i class="fas fa-pause"></i>
+
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-10">
+							10
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\one direction.jpg">
+						</div>
+						<div class="queue-song-name">
+							One Way or Another<br>
+							<span class="queue-singer-name">
+							One Direction</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+
+					</div>
+					<div class="queue-song-container">
+						<div class="serial-no-11">
+							11
+						</div>
+						<div class="queue-song-img-container">
+							<img src="Images\\bts-dna.jpg">
+						</div>
+						<div class="queue-song-name">
+							DNA<br>
+							<span class="queue-singer-name">
+							BTS
+							</span>	
+						</div>
+						<div class="playBtn-in-queue">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="fav-heart">
+							<i class="far fa-heart"></i>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- ####################################### MUSIC PLAYER ############################################ -->
+		
+		<div class="music-player-space">
+		</div>
+		
+		<div class="music-player" class="div-inline-block">
+			<figure>
+				<img class="music-img" src="Images\\taylor-swift-me.jpg">  
+
+			</figure>
+			<div class="song-name"> 
+				<i class="fas fa-music"></i>&emsp;Me : &nbsp;  Taylor Swift
+			</div>
+			<div class="sub-container-player div-inline-block">
+				<span  class="time-start">
+				1:30
+				</span>
+
+				<div class="bar-container div-inline-block">
+						<div id="music-bar" class="display-flex">
+							<div class="circular-dragger ">
+								
+							</div>
+						</div>
+				</div>
+
+				<span  class="time-start">
+					3:00
+				</span>
+			
+				<div id="music-button" class="div-inline-block">
+					<br>
+					<i class="fas fa-step-backward"></i>
+					&emsp;
+					<i class="fas fa-pause"></i></i>
+					&emsp;
+					<i class="fas fa-step-forward ste["></i>
+			
+					</div>
+
+				<div class="music-options div-inline-block">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-redo"></i>
+					<i class="fas fa-volume-up"></i>
+					<i class="fas fa-bars"></i>
+			
+				</div>
+		</div>
+
+		</div>
+	<script>
+	function show() {
+	  var x = document.getElementById("aside-section");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+		
+	
+
+
+
+
+
+
+
+	
+</body>
+</html>
+
+
+

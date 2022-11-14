@@ -11,30 +11,32 @@ import {
 
 export default function App() {
   return (
-    <MDBFooter className='text-center fixed-bottom ' color='white' bgColor='dark'>
+    <div id="Footer">
+    <MDBFooter className='text-center'data-aos="fade-up" data-aos-duration="1200" color='white' bgColor=''>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          
+          <MDBBtn outline color="light" floating className='m-1 buttonmdb ' href='https://www.facebook.com/login/' role='button'>
             <MDBIcon fab icon='facebook-f' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1 buttonmdb' href='https://twitter.com/' role='button'>
             <MDBIcon fab icon='twitter' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1 buttonmdb' href='https://www.google.co.in/' role='button'>
             <MDBIcon fab icon='google' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1 buttonmdb' href='https://www.instagram.com/accounts/login/' role='button'>
             <MDBIcon fab icon='instagram' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.linkedin.com/login' role='button'>
             <MDBIcon fab icon='linkedin-in' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://github.com/login' role='button'>
             <MDBIcon fab icon='github' />
           </MDBBtn>
         </section>
@@ -44,16 +46,16 @@ export default function App() {
             <MDBRow className='d-flex justify-content-center'>
               <MDBCol size="auto">
                 <p className='pt-2'>
-                  <strong>Sign up for our newsletter</strong>
+                  <strong>Sign up for the website</strong>
                 </p>
               </MDBCol>
 
               <MDBCol md='5' start='12'>
-                <MDBInput contrast type='email' label='Email address' className='mb-4' />
+                <MDBInput contrast type='email' className='mb-4' />
               </MDBCol>
 
               <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
+                <MDBBtn outline color='light' type='submit' className='mb-4 buttonmdb1'>
                   Subscribe
                 </MDBBtn>
               </MDBCol>
@@ -63,118 +65,83 @@ export default function App() {
 
         <section className='mb-4'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+            <h1>ADVENTURE AWAITS, GO FIND IT</h1>
+            Make your trip the best with some crazy memories with your favourite people.
+
           </p>
         </section>
 
         <section className=''>
           <MDBRow>
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>TRAVEL TIPS</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
+                    BLOG
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
+                    DETINATION
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
+                    INDIA TRAVEL
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
+                    TRAVEL INSURANCE
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>RESOURCES</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
+                    CATEGORIES
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
+                    CITY GUIDES
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
+                    TRAVEL RESOURCES
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
+                    DISCOUNTS AND COUPONS
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>GET IN TOUCH</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
+                    (+01) 123 456 789
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
+                    (+91) 987 654 3210
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
+                    asd@gmail.com
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
+                    jkl@gmail.com
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>LEGAL</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
+                    TERMS
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
+                    SERVICES
                 </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
+                <li>  
+                  POLICIES
                 </li>
               </ul>
             </MDBCol>
@@ -183,11 +150,12 @@ export default function App() {
       </MDBContainer>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2020 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+       
+        <a className='text-white' href=''>
+            Travel Safari
         </a>
       </div>
     </MDBFooter>
+</div>
   );
 }

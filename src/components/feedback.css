@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+body{
+    background-color: white!important;
+}
+.allc{
+    border:2px solid black;
+}
+#feedback {
+   
+   
+}
+
+.container {
+   
+   
+}
+
+#c2 {
+    margin-left: 10%
+}
+
+#c1 {
+    margin-left: 10%
+}
+
+#c3 {
+    margin-left: 10%
+}
+
+.mb-3name {
+    display: flex;
+}
+
+.first {
+    margin-left: 2%;
+}
+
+.last {
+    margin-left: 2%;
+}

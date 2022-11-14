@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes flip{
+			from{
+				transform:rotateY(0deg);
+
+			}
+			to{
+				transform:rotateY(360deg) ;
+			} 
+		}
+		@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+		div{
+			animation-name:marquee;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			
+			height:100px;
+			width:100px;
+			animation-timing-function: linear;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		Utsav
+	</div>
+
+</body>
+</html>

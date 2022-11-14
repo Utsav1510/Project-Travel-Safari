@@ -1,0 +1,30 @@
+.flex-container{
+    height:autopx;
+    background-color:#212529;
+    padding:20px;
+    
+}
+body{
+    background-color: #212529 !important;
+}
+.p-2 i{
+    font-size: 3rem;
+    
+}
+#hotels{
+    margin-top:5%;  
+}
+
+.flex-container .p-2{
+    background-color: rgb(242, 203, 8);
+    font-weight: bolder;
+
+    width:200px;
+    height:190px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+
+}
